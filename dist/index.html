@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sample Report</title>
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		/* container内のcolumnで、画像を横幅一杯に広げるスタイル。 */
+		/* refer to the https://stackoverflow.com/a/47850585 */
+		.level>div {
+			padding: 10px;
+		}
+
+		.level>div>img {
+			width: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="mx-5 my-3">
+		<h1 class="fs-1">Issue Report</h1>
+
+		<div class="card mt-4">
+			<h5 class="card-header">まとめ</h5>
+			<div class="card-body">
+				<h5 class="card-title">期間: 2025/12/1 - 2025/12/5</h5>
+				<p class="card-text">内容1の案件が最も多く、案件がX件増加した。</p>
+				<a href="#" class="btn btn-primary">参考ページ</a>
+			</div>
+		</div>
+
+		<h2 class="fs-2 mt-4">案件の割合</h2>
+		<div class="container-fluid mt-2">
+			<div class="row level">
+				<div class="col">
+					<img src="assets/images/pie-chart.png">
+				</div>
+				<div class="col">
+					<img src="assets/images/pie-chart.png">
+				</div>
+			</div>
+		</div>
+
+		<h2 class="fs-2 mt-4">月ごとの案件数</h2>
+		<div class="container-fluid mt-2">
+			<div class="row level">
+				<div class="col">
+					<img src="assets/images/column-chart.png">
+				</div>
+			</div>
+		</div>
+
+		<h2 class="fs-2 mt-4">Issueリンク一覧</h2>
+		<div class="container-fluid mt-2">
+			<div class="row level">
+				<div class="col">
+					<ul>
+						<li><a href="#">Issue 1</a></li>
+						<li><a href="#">Issue 2</a></li>
+						
+					</ul>
+				</div>
+				<div class="col">
+					<ul>
+						<li><a href="#">Issue 3</a></li>
+						<li><a href="#">Issue 4</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
